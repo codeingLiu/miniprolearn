@@ -1,0 +1,25 @@
+<!--pages/navigator/navigator.wxml-->
+<view style="text-align:center"> {{title}} </view>
+<view> 点击左上角返回回到之前页面 </view>
+<view>
+  <checkbox-group bindchange="checkboxChange"> 
+   <lable wx:for="{{items}}" class="checkbox">
+     <checkbox value="{{item.name}}"  checked="{{item.checked}}">
+     {{item.value}}
+     </checkbox>
+    </lable>
+  </checkbox-group>
+
+  <editor id="editor" class="mydeitor" placeholder="{{placeholder}}"
+  showImgSize
+  showImgToolbar
+  showImgResize
+  bindstatuschange="onStatusChange"
+  read-only="{{readOnly}}"
+  bindready="onEditorReady">
+  </editor>
+
+  <view class="section">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" />
+  </view>
+</view>

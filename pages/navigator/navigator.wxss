@@ -1,0 +1,8 @@
+/* pages/navigator/navigator.wxss */
+.mydeitor{
+  width: 100rpx;
+  height: 30rpx;
+}
+.checkbox{
+  display: flex
+}

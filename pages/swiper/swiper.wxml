@@ -1,0 +1,26 @@
+<!--pages/swiper/swiper.wxml-->
+<view class="container swipers">
+  <!--lunbo-->
+   <swiper class="myswiper" indicator-dots="true"interval="3000" autoplay="true" circular="true">
+     <block wx:for="{{imageUrls}}" >
+       <swiper-item >
+         <image src="{{item}}" class="slide-image" ></image>
+       </swiper-item>
+     </block>
+   </swiper>
+
+   <!--listview-->
+   <scroll-view>
+    <view class="v-listview">
+     <block wx:for="{{listdata}}">
+      <image src="{{item}}" class="listimage" ></image>
+     </block>
+   </view>
+  </scroll-view>
+
+  <!-- <view class="hview" hover-class="bottom-class"> -->
+<button>添加</button>
+  <!-- </view> -->
+</view>
+
+

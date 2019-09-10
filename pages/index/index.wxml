@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfos.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfos.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" bindtap="gotoswiper" selectable="true">{{motto}}</text>
+  </view>
+
+  <progress percent="{{percent}}" show-info="true" class="myp"/>
+  <progress percent="40" stroke-width="12" class="myp"/>
+  <progress percent="60" activeColor="pink" class="myp"/>
+  <progress percent="80" active="true" class="myp"/>
+
+  <!-- sample.wxml -->
+<view class="btn-area">
+  <navigator url="/pages/navigator/navigator?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+  <navigator url="../redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+  <navigator url="/pages/logs/logs" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+  <navigator target="miniProgram" open-type="navigate" app-id="" path="" extra-data="" version="release">打开绑定的小程序</navigator>
+  <navigator url="/pages/gallery/gallery">图库</navigator>
+</view>
+</view>
+<button>按钮</button>

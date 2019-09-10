@@ -1,0 +1,27 @@
+<!--pages/image/image.wxml-->
+<!-- <text>pages/image/image.wxml</text> -->
+<!--
+1.image可以是单标签，也可能是双标签
+-->
+<!-- <image/>
+<text>哈哈哈</text> -->
+
+<!--1.src  可以显示绝对路径，或者相对路径,网络路径-->
+<image src="../../static/icon/g2.jpeg"></image>
+
+<!--补充，显示相册的图片-->
+<button bindtap="chooseImage">选择相册</button>
+<image src="{{curImage}}" />
+
+<!--图片懒加载 lazy-load-->
+<!--监听加载完成-->
+<image wx:for="{{1}}"
+       src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"
+       lazy-load
+       bindload="bindload"></image>
+
+
+<!--显示识别二维码-->
+
+<image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640" 
+       show-menu-by-longpress></image>

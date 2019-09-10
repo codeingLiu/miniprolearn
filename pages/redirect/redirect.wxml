@@ -1,0 +1,11 @@
+<!--pages/redirct/redirect.wxml-->
+<view style="text-align:center"> {{title}} </view>
+<view> 点击左上角返回回到上级页面 </view>
+<text>九九乘法表</text>
+<view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i" wx:key="*this">
+  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j" wx:key="*this">
+    <view wx:if="{{i<=j}}">
+      {{i}} * {{j}} = {{i*j}}
+    </view>
+  </view>
+</view>
