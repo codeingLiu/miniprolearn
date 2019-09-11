@@ -11,5 +11,7 @@ Page({
         return util.formatTime(new Date(log))
       })
     })
+
+    console.log(util.formatTimeTwo(1568166882000, "Y/M/D h:m:s"))
   }
 })

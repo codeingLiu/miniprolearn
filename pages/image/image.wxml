@@ -10,7 +10,8 @@
 <image src="../../static/icon/g2.jpeg"></image>
 
 <!--补充，显示相册的图片-->
-<button bindtap="chooseImage">选择相册</button>
+<button bindtap="chooseImage"
+        hover-class="hover-choose">选择相册</button>
 <image src="{{curImage}}" />
 
 <!--图片懒加载 lazy-load-->
