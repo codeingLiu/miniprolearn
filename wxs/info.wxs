@@ -1,0 +1,15 @@
+
+var message="Hello Word";
+var name = "codewhy";
+
+function sum(num1, num2) {
+  return num1 + num2
+}
+
+
+//以上定义的变量和函数都是私有的，要给外部用需要导出
+module.exports = {
+  message: message,
+  name: name,
+  sum: sum
+}

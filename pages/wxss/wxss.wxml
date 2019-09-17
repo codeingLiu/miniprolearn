@@ -1,0 +1,46 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- <text>pages/wxss/wxss.wxml</text> -->
+<!--样式的三种方式-->
+
+
+<!-- 行内样式 -->
+<view style='color:red;font-size:32px'>创璞科技</view>
+
+<!-- 页内样式  box样式写在 本css-->
+<view class="box">创璞科技</view>
+
+<!-- 全局样式  写在app.wxcss中-->
+<view class="control">创璞科技</view>
+
+<!-- 小程序新增单位rpx -->
+<view class="box1"></view>
+<view class="box2"></view>
+<view>{{nowTime}}</view>
+
+<!-- 条件判断 
+wx:if  隐藏，根本没有创建
+hidded 创建了，只是通过样式的display来改变隐藏状态-->
+<view>--条件判断--</view>
+<button bindtap="switchShow" size="mini">切换显示</button>
+<view wx:if="{{isShow}}">创璞科技</view>
+<view wx:if="{{score >=98}}">优秀</view>
+<view wx:elif="{{score>=70}}">良好</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else="{{score<60}}">不及格</view>
+
+<!-- wx:for循坏语句 -->
+<!-- <view wx:for="{{['abd','dab','ccd']}}">{{item}}  {{index}}</view>
+<view wx:for="9">{{item}}</view>
+<view wx:for="{{9}}">{{item}}</view> -->
+
+<!-- block标签 只是一个标签，不会渲染-->
+<block wx:for="{{3}}">
+  <button>按钮</button>
+</block>
+
+<!-- item,index起名字 -->
+<block wx:for="{{nums}}" wx:for-item="InnerNum">
+  <block wx:for="{{InnerNum}}">
+     <view>{{item}}</view>
+  </block>
+</block>

@@ -1,0 +1,18 @@
+/* pages/wxss/wxss.wxss */
+.box{
+  color: red;
+  font-size: 32px;
+}
+
+
+.box1{
+  width: 100px;
+  height: 100px;
+  background: purple;
+}
+
+.box2{
+  width: 100rpx;
+  height: 100rpx;
+  background:red;
+}

@@ -1,0 +1,34 @@
+<!--pages/wxs/wxs.wxml-->
+<!-- <text>pages/wxs/wxs.wxml</text> -->
+
+<!-- 微信脚本wxs，运行在wxml中 -->
+
+<!-- 通过wxs标签定义  第一种方法-->
+<!-- <wxs module="info">
+  //js代码声明变量和函数
+  var message="Hello Word";
+  var name="codewhy";
+  function sum(num1,num2){
+    return num1+num2
+  }
+
+   //以上定义的变量和函数都是私有的，要给外部用需要导出
+   module.exports={
+     message: message,
+     name: name,
+     sum: sum
+   }
+</wxs> -->
+
+<!-- 第二种方法通过wxs标签导入已经写好的wxs文件语句 -->
+<!-- 导入的时候这里只能用相对路径，不能用绝对路径 -->
+<wxs src="../../wxs/info.wxs" module="info"/>
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(20,60)}}</view>
+
+<!-- 实际应用 -->
+<wxs src="../../wxs/format.wxs" module="format"/>
+<view>{{format.priceFormat(26.66666666)}}</view>
+<view>{{format.formatTime(1568166882000,"yyyy-MM-dd hh:mm:ss")}}</view>
+<view>{{format.parseStringTime("2019-09-11")}}</view>
