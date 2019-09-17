@@ -50,7 +50,7 @@ App({
     //可以获取用户信息
     wx.getUserInfo({
       success:function (res){
-        console.log(res)
+        // console.log(res)
       }
     });
   },

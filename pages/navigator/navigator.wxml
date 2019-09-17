@@ -10,15 +10,7 @@
     </lable>
   </checkbox-group>
 
-  <editor id="editor" class="mydeitor" placeholder="{{placeholder}}"
-  showImgSize
-  showImgToolbar
-  showImgResize
-  bindstatuschange="onStatusChange"
-  read-only="{{readOnly}}"
-  bindready="onEditorReady">
-  </editor>
-
+  
   <view class="section">
   <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" />
   </view>

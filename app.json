@@ -1,10 +1,14 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/wxlogin/wxlogin",
+    "pages/request/request",
+    "pages/tabbar/tabbar",
+    "pages/cpn/cpn",
+    "pages/event/event",
     "pages/wxs/wxs",
     "pages/wxss/wxss",
     "pages/image/image",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/swiper/swiper",
     "pages/navigator/navigator",
     "pages/redirect/redirect",

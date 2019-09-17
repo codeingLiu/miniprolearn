@@ -1,5 +1,12 @@
 <!--pages/gallery/gallery.wxml-->
 <text>pages/gallery/gallery.wxml</text>
 <view>
-  <mp-gallery show="{{show}}" bindchange="change" binddelete="delete" bindhide="hide" img-urls="{{imgUrls}}" delete hide-on-click="{{true}}" current="1"></mp-gallery>
+  <mp-gallery show="{{show}}" 
+              bindchange="change" 
+              binddelete="delete" 
+              bindhide="hide" 
+              img-urls="{{imgUrls}}" 
+              delete hide-on-click="{{true}}" 
+              current="1">
+              </mp-gallery>
 </view>

@@ -18,32 +18,14 @@ Page({
   checkboxChange: function (e) {
     console.log('checkbox发生change事件，携带value值为：', e.detail.value)
   },
-
-
-  readOnlyChange() {
-    this.setData({
-      readOnly: !this.data.readOnly
-    })
-  },
-  onEditorReady() {
-    const that = this
-    wx.createSelectorQuery().select('#editor').context(function (res) {
-      that.editorCtx = res.context
-    }).exec()
-  },
-  format(e) {
-    let { name, value } = e.target.dataset
-    if (!name) return
-    // console.log('format', name, value)
-    this.editorCtx.format(name, value)
-  },
   
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+     //页面跳转，参数会放在options里边
+     //这里可以获取传过来的参数
+     console.log(options)
   },
 
   /**

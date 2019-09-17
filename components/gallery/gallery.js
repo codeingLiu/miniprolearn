@@ -139,6 +139,8 @@ Component({
             this.setData({
                 current: e.detail.current
             });
+            //要是调用者能用我们的组件里边的事件，需要把事件名字通过该方法发射出去
+            //调动的时候bindchange 这个属性就可以监听我们的事件了
             this.triggerEvent('change', { current: e.detail.current }, {});
         },
         deleteImg: function deleteImg() {
