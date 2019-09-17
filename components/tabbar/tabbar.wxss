@@ -1,0 +1,36 @@
+/* components/tabbar/tabbar.wxss */
+.tab-view{
+  /*可以用这个来把几个view放在一行  结合下面的flex:1 */
+  display: flex;
+  height: 80rpx;
+  /*垂直方向居中*/
+  line-height: 80rpx;
+  background:gainsboro;
+}
+
+.btn{
+  flex: 1;
+  background:gainsboro;
+  text-align: center;
+}
+
+.active{
+  color: pink;
+  background: beige;
+  /*增加下划线*/
+  /* border-bottom: 6rpx solid pink; */
+}
+
+/*为了使下划线长度更接近文本，所以这样使用样式*/
+.active text{
+  /*调整线的位置和宽度*/
+  padding: 12rpx 18rpx;
+  /*增加下划线*/
+  border-bottom: 6rpx solid pink;
+}
+
+.box{
+  width: 200rpx;
+  height: 200rpx;
+  background: rebeccapurple;
+}

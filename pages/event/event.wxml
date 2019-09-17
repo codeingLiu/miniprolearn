@@ -1,0 +1,30 @@
+<!--pages/event/event.wxml-->
+<!-- <text>pages/event/event.wxml</text> -->
+<!-- 事件类型 -->
+<view class="box"
+      bindtouchstart="touchStart"
+      bindtouchmove="touchMove"
+      bindtouchend="touchEnd"
+      bindlongtap="longPress"></view>
+
+<!-- 事件参数传递 -->
+<view class="box1">
+  <block wx:for="{{datas}}" wx:key="index" wx:for-index="index">
+    <view class="boxcon"
+          bindtap="itemClick"
+          data-index="{{index}}"
+          data-item="{{item}}">
+    {{item}} {{index}}
+    </view>
+  </block>
+</view>
+
+<!-- 事件扑捉和事件冒泡 
+扑捉是从外层到内层，冒泡是从内层到外层
+capture-catch:tap/  catch:tap可阻止扑捉和冒泡的
+-->
+<view class="view1" capture-bind:tap="capturebindView1" bindtap="bindtapView1">
+  <view class="view2" capture-bind:tap="capturebindView2" bindtap="bindtapView2">
+   <view class="view3" capture-catch:tap="capturebindView3" bindtap="bindtapView3"></view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<!--components/myslot/myslot.wxml-->
+<!-- <text>components/myslot/myslot.wxml</text> -->
+
+<!--插槽
+  1.单个插槽的时候可以直接用slot标签插入
+  2.多个插槽分两步
+    1，给插槽添加一个name属性 
+    2，添加一个options选项 里面用mutipleSlots:true
+-->
+
+<view>我是插槽的开始</view>
+<slot name="slot1"/>
+<slot name="slot2"/>
+<slot name="slot3"/>
+<view>我是插槽的结束</view>

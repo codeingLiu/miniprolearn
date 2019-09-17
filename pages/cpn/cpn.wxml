@@ -1,0 +1,29 @@
+<!--pages/cpn/cpn.wxml-->
+<!-- <text>pages/cpn/cpn.wxml</text> -->
+<!--组件的使用-->
+
+<!--使用自定义组件的文本属性(titleTxt)和样式属性(titleclass)-->
+<mycpn titleTxt="北京创璞科技" titleclass="redclass"
+       contextTxt="成功上市"
+       bindclick="click"
+       ></mycpn>
+<mycpn titleTxt="成都创璞科技" titleclass="greedclass"
+       contextTxt="成功上市"></mycpn>
+<mycpn titleTxt="西安创璞科技" titleclass="buleclass"
+       contextTxt="成功上市"></mycpn>
+
+<button size="mini" bindtap="increment">增加</button>
+<mysel class="sel-class" id="sel-id"></mysel>
+
+<view>-------</view>
+
+<!-- slot插槽的使用
+  多个插槽分两步
+    1，给插槽添加一个name属性 
+    2，添加一个options选项 里面用mutipleSlots:true
+ -->
+<myslot>
+  <text slot="slot2">我是第二个插槽</text>
+  <slider slot="slot1" value="50"></slider>
+  <button slot="slot3" >我是第三个插槽</button>
+</myslot>

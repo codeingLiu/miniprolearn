@@ -1,0 +1,10 @@
+<!--pages/tabbar/tabbar.wxml-->
+<!-- <text>pages/tabbar/tabbar.wxml</text> -->
+
+<mytab names="{{titles}}" 
+       bindtabclick="itemClick"
+       ></mytab>
+
+
+
+

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mycpn":"/components/mycpn/mycpn",
+    "mysel":"/components/mysel/mysel",
+    "myslot":"/components/myslot/myslot"
+  }
+}

@@ -1,0 +1,8 @@
+<!--components/mycpn/mycpn.wxml-->
+<!-- <text>components/mycpn/mycpn.wxml</text> -->
+<!-- 自定义组件
+  title 是组件内的样式，titleclass 是调用组件页面传递过来的样式
+  titleTxt 是调用组件页面传过来的值
+ -->
+<view class="title titleclass" bindtap="handleClick">{{titleTxt}}</view>
+<view class="context">{{contextTxt}}</view>

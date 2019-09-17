@@ -1,0 +1,14 @@
+<!--components/tabbar/tabbar.wxml-->
+<!-- <text>components/tabbar/tabbar.wxml</text> -->
+<!-- 自定义组件tablebar -->
+
+<view class="tab-view">
+  <block wx:for="{{names}}" wx:key="index">
+    <view class="btn {{currentIndex == index ? 'active':'' }}" 
+          bindtap="handleclick"
+          data-index="{{index}}">
+      <!-- 为了给剪短下划线的长度，把数据给填充在text中 -->
+      <text data-index="{{index}}">{{item}}</text>
+    </view>
+  </block>
+</view>

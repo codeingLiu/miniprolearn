@@ -1,0 +1,5 @@
+<!--components/mysel/mysel.wxml-->
+<!-- <text>components/mysel/mysel.wxml</text> -->
+
+<!-- 演示可以通过调用者直接修改组件的值 -->
+<view>组件里面的值：{{counter}}</view>

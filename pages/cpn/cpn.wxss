@@ -1,0 +1,13 @@
+/* pages/cpn/cpn.wxss */
+.redclass{
+  color: red;
+}
+
+.greedclass{
+  color: green;
+}
+
+.buleclass{
+  color: blue;
+}
+

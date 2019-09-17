@@ -1,0 +1,15 @@
+/* components/mycpn/mycpn.wxss */
+.title{
+  font-size: 40;
+  font-weight: 700;
+}
+
+.context{
+  font-size: 20;
+}
+
+.box{
+  width: 200rpx;
+  height: 200prx;
+  background: rebeccapurple;
+}
